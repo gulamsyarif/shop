@@ -189,7 +189,7 @@
             <div>
                 <h5>Contact</h5>
                 <ul>
-                    <li>Jl. Kebun II Blk C No.20, Bandungrejosari, Kec. Sukun, Kota Malang, Jawa Timur</li>
+                    <li>Jl. Keben II Blk C No.20, Bandungrejosari, Kec. Sukun, Kota Malang, Jawa Timur</li>
                     <li>No. WA: 0856-4507-8880</li>
                 </ul>
             </div>
@@ -199,11 +199,14 @@
             </div>
             <div class="social-media">
                 <h5>Social Media</h5>
-                <a href="https://www.instagram.com/ridho_advertising">
+                <a href="https://www.instagram.com/ridhoadvertisingmlg?igsh=MTI1bmdxcTMxbmVycg==">
                     <img src="{{ asset('logo/ig.png') }}" alt="Instagram">
                 </a>
-                <a href="https://www.tiktok.com/@ridho_advertisin">
-                    <img src="{{ asset('logo/tiktok.png') }}" alt="TikTok">
+                <a href="https://wa.me/6285645078880">
+                    <img src="{{ asset('logo/whatsapp.png') }}" alt="WhatsApp">
+                </a>
+                <a href="https://www.facebook.com/p/Percetakan-RIDHO-Advertising-100037758291010/">
+                    <img src="{{ asset('logo/facebook.png') }}" alt="Facebook">
                 </a>
             </div>
         </div>

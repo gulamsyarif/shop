@@ -39,9 +39,9 @@ class Update extends Component
     public function update(){
         $this->validate([
             'title' => 'required|min:3',
-            'description' => 'required|max:180',
+            'description' => 'required|max:1000',
             'price' => 'required|numeric',
-            'image' => 'image|max:1024'
+            'image' => 'image'
         ]);
         if ($this->productId) {
             $product = Product::find($this->productId);

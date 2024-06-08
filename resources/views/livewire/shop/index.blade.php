@@ -13,6 +13,9 @@
         <div class="col-sm-12 col-xs-12 col-md-4 col-lg-4 mb-4">
             <div class="card h-80" >
                 <div style="position: relative; width: 415px; height: 200px;">
+                    <div class="card-img-overlay">
+                        <a href="{{ route('shop.deskripsi', ['id' => $product->id]) }}" class="nav-link" style="width: 100%; height: 100%; object-fit: cover;"></a>
+                    </div>
                     <img class="card-img-top img-fluid" src="{{ $product->image ? asset('/storage/' . $product->image) : 'http://placehold.it/150x150' }}" alt="" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 {{-- <img class="card-img-top img-fluid" src="{{ $product->image ? asset('/storage/' . $product->image) : 'http://placehold.it/150x150' }}" alt=""> --}}
@@ -26,7 +29,7 @@
                     {{-- <p class="text-white">
                         {{ $product->description }}
                     </p> --}}
-                    <button wire:click="addToCart({{ $product->id }})" type="button" class="btn btn-sm btn-block btn-outline-secondary text-white">Add to cart</button>
+                    <button wire:click="addToCart({{ $product->id }})" type="button" class="btn btn-sm btn-block btn-outline-info text-white">Add to cart</button>
                 </div>
             </div>
         </div>

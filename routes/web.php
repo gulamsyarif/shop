@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Livewire\Shop\Cart;
-use App\Livewire;
+use App\Livewire\Shop;
+use App\Livewire\Product;
 use App\Livewire\Counter;
 use App\Http\Controllers\HomeController;
 
@@ -22,13 +22,9 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/admin/product', [HomeController::class, 'index'])->name('admin.product');
 
-Route::get('/', function () {
-    return view('shop');
-})->name('shop.index');
-Route::get('/cart', function () {
-    return view('cart');
-})->name('shop.cart');
-Route::get('/checkout', function () {
-    return view('checkout');
-})->name('shop.checkout');
-
+Route::get('/', shop\index::class)->name('shop.index');
+Route::get('/cart', shop\cart::class)->name('shop.cart');
+Route::get('/checkout', shop\checkout::class)->name('shop.checkout');
+Route::get('/deskripsi', function () {
+    return view('deskripsi');
+})->name('shop.deskripsi');

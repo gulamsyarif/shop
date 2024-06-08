@@ -22,9 +22,9 @@ class Create extends Component
     public function store(){
         $this->validate([
             'title' => 'required|min:3',
-            'description' => 'required|max:180',
+            'description' => 'required|max:1000',
             'price' => 'required|numeric',
-            'image' => 'image|max:1024'
+            'image' => 'image'
         ]);
 
         $imageName = '';
